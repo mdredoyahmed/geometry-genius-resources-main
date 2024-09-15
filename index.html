@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>geometry-genius-main</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main>
+    <!-- main container -->
+    <div class="flex flex-col lg:flex-row  ">
+      <!-- shape container -->
+       <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!--trangle card-->
+        <div class="card card-compact bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="/images/triangle.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">triangle!</h2>
+            <p>Area (A) = 0.5 X b X h </p>
+
+            <p class="">
+              <input type="text" class="border w-24 px-2 text-xl bg-gray-100 " name="" id="triangle-base"
+                placeholder="base">
+              <span class="ml-2">Cm</span>
+
+              <input type="text" class="ml-5 border w-24 px-2 text-xl bg-gray-100  " name="" id="triangle-height"
+                placeholder="height">
+              <span class="ml-2">Cm</span>
+            </p>
+
+            <p class="text-2xl">Area : <span class="font-bold" id="triangle-area">0</span> <span>cm <sup>2</sup></span>
+            </p>
+
+            <div class="card-actions ">
+              <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">calculater</button>
+            </div>
+          </div>
+        
+        </div>
+
+       <!--rectangle card-->
+        <div class="card card-compact bg-base-100 w-96 shadow-xl">
+          <figure>
+            <img src="/images/rectangle.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Rectangle</h2>
+            <p>Area (A) = w X l </p>
+
+            <p>
+              <!--rectaangle width -->
+              <input type="text" class="border w-24 px-2 text-xl bg-gray-100 " name="" id="rectangle-width"
+                placeholder="width">
+              <span class="ml-2">Cm</span>
+             <!--rectaangle length -->
+              <input type="text" class="ml-5 border w-24 px-2 text-xl bg-gray-100  " name="" id="rectangle-length"
+                placeholder="length">
+              <span class="ml-2">Cm</span>
+            </p>
+
+            <p class="text-2xl">Area : <span class="font-bold" id="rectangle-area">0</span> <span>cm <sup>2</sup></span>
+            </p>
+
+            <div class="card-actions ">
+              <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">calculater</button>
+            </div>
+          </div>
+        
+        </div>
+      
+<!--parallelogram card-->
+<div class="card card-compact bg-base-100 w-96 shadow-xl">
+  <figure>
+    <img src="/images/parallelogram.png" alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Parallelogram</h2>
+    <p>Area (A) = b X h </p>
+
+    <p>
+      <!--parallelogram width -->
+      <input type="text" class="border w-24 px-2 text-xl bg-gray-100 " name="" id="parallelogram-base"
+        placeholder="base">
+      <span class="ml-2">Cm</span>
+     <!--parallelogram height  -->
+      <input type="text" class="ml-5 border w-24 px-2 text-xl bg-gray-100  " name="" id="parallelogram-height"
+        placeholder="height">
+      <span class="ml-2">Cm</span>
+    </p>
+
+    <p class="text-2xl">Area : <span class="font-bold" id="parallelogram-area">0</span> <span>cm <sup>2</sup></span>
+    </p>
+
+    <div class="card-actions ">
+      <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">calculater</button>
+    </div>
+  </div>
+
+</div>
+
+   <!--ellips  card-->
+<div class="card card-compact bg-base-100 w-96 shadow-xl">
+  <figure>
+    <img src="/images/ellipse.png" alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">Ellipse</h2>
+    <p>Area (A) = πab </p>
+
+    <p>
+      <!--ellips width -->
+      <input type="text" class="border w-24 px-2 text-xl bg-gray-100 " name="" id="ellipse-major-radius"
+        placeholder="large">
+      <span class="ml-2">Cm</span>
+     <!--ellips height  -->
+      <input type="text" class="ml-5 border w-24 px-2 text-xl bg-gray-100  " name="" id="ellips-minor-radius"
+        placeholder="short">
+      <span class="ml-2">Cm</span>
+    </p>
+
+    <p class="text-2xl">Area :<span class="font-bold" id="ellips-area">0</span> <span>cm <sup>2</sup></span>
+    </p>
+
+    <div class="card-actions ">
+      <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">calculater</button>
+    </div>
+  </div>
+
+</div>
+
+      <!--2nd card-->
+      <div class="card card-compact bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img src="/images/rectangle.png" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!--3rd card-->
+      <div class="card card-compact bg-base-100 w-96 shadow-xl">
+        <figure>
+          <img src="/images/rectangle.png" alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+      <!-- area calculater -->
+      <div class="w-[400px]">
+        <div class="text-4xl "> Area calculater </div>
+      </div>
+    </div>
+  </main>
+  <script src="scripts/area-claculator.js"></script>
+</body>
+
+</html>
